@@ -1,0 +1,101 @@
+        @font-face {
+            font-family: 'PixelFont';
+            src: url('https://fonts.gstatic.com/s/pixel/v1/pxiEyp8kv8JHgFVrJJbecnFt.ttf');
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: 'PixelFont', monospace;
+        }
+
+        #game-board {
+            position: absolute;
+            height: 400px;
+            width: 400px;
+            border: 1px solid black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        #info {
+            position: relative;
+            top: -250px;
+            height: 50px;
+            width: 400px;
+            border: 1px solid black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .dot {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            background: black;
+            border-radius: 50%;
+            transition: transform 0.2s;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .apple {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            background: black;
+            border-radius: 50%;
+            transform: scale(1.2);
+            box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+        }
+
+        #info_board {
+            border: 1px solid black;
+            opacity: 0.5;
+        }
+
+        #score {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            font-family: 'PixelFont', monospace;
+        }
+
+        #start-pause-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            font-family: 'PixelFont', monospace;
+        }
+
+        #restart-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            display: none;
+            font-family: 'PixelFont', monospace;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            font-family: 'PixelFont', monospace;
+        }
